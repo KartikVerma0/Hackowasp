@@ -21,7 +21,7 @@
 }
 
 .u-fs-large {
-    font-size: clamp(1.5rem, 15vw, 4.5rem);
+    font-size: clamp(1.5rem, 14vw, 4.5rem);
 }
 
 .u-fs-medium {
@@ -56,6 +56,18 @@
     width: 90%;
 }
 
+.u-height-regular {
+    height: 2rem;
+}
+
+.u-height-big {
+    height: 4rem;
+}
+
+.u-height-large {
+    height: 6rem;
+}
+
 .u-fw-medium {
     font-weight: 500;
 }
@@ -70,6 +82,16 @@
     .u-center-on-small-screen {
         text-align: center;
         justify-content: center;
+    }
+}
+
+.u-rounded-4 {
+    border-radius: 0.5rem;
+}
+
+@media screen and (max-width: 576px) {
+    .u-flex-xs-column-reverse {
+        flex-direction: column-reverse;
     }
 }
 
@@ -143,4 +165,25 @@ body {
     border-top-right-radius: var(--border-radius);
     border-bottom-right-radius: var(--border-radius);
     transform: translate(-10px, -1px);
+}
+
+/* ISSUE REGISTRATION PAGE */
+
+.issue-heading {
+    color: var(--clr-complementary-400);
+    font-weight: 600;
+    /* font-size: 3.5rem; */
+}
+
+.issue-form {
+    background-image: linear-gradient(
+        to top,
+        var(--clr-complementary-400),
+        var(--clr-complementary-100)
+    );
+    border-radius: 1.5rem;
+}
+
+#locationTrackingLink {
+    cursor: pointer;
 }
