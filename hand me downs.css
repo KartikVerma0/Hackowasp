@@ -1,0 +1,151 @@
+:root {
+    --clr-primary-100: #ffbf00;
+    --clr-primary-200: #e3a700;
+    --clr-primary-300: #c78f00;
+    --clr-primary-400: #ab7800;
+    --clr-complementary-100: #00d8ff;
+    --clr-complementary-200: #00bfff;
+    --clr-complementary-300: #00a7ff;
+    --clr-complementary-400: #0085cb;
+}
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(images/donate\ cloth1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat; 
+}
+
+
+.text {
+    
+    width: auto;
+    margin-left: 50rem;
+    margin-right: 2rem;
+    margin-top: 10rem;
+    height: 100vh;
+}
+
+
+.text h1{
+    text-align: right;
+    color: blue;
+    font-size: 50px;
+    font-family: 'playfair display',serif;
+}
+
+
+.text h3{
+    text-align: right;
+    font-size: 28px;
+    font-family: 'playfair display',serif;
+}
+
+
+.eventsl{
+    display: flex;
+}
+
+
+
+.eventsr{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+
+.img1{
+    margin-left: 15rem;
+    margin-right: 15rem;
+}
+
+.img2{
+    margin-right: 15rem;
+    margin-left: 15rem;
+}
+
+.evtextl{
+    text-align: justify;
+    margin-right: 5rem;
+    margin-left: 10rem;
+    padding-left: 2rem;
+    font-family: 'poppins',serif;
+}
+
+.eventsr h1{
+    text-align: left;
+    font-family: 'playfair display',serif;
+
+}
+
+.eventsl h1{
+    font-family: 'playfair display',serif;
+}
+
+
+.evtextr {
+    text-align: justify;
+    margin-left: 15rem;
+    font-family: 'poppins',serif;
+}
+
+
+
+.u-width-100per {
+    width: 100%;
+}
+
+.u-mt-large {
+    margin-top: 8rem;
+}
+
+.rotate-180 {
+    transform: rotateX(180deg);
+}
+
+.footer-box {
+    background-color: var(--clr-primary-200);
+    transform: translateY(-1px);
+    padding-bottom: 5rem;
+}
+
+@media screen and (max-width: 576px) {
+    .u-center-on-small-screen {
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+.u-fw-medium {
+    font-weight: 500;
+}
+
+.footer-social-media-icons {
+    width: 40px;
+}
+
+.footer-subscribe-forminput {
+    --border-radius: 2rem;
+    height: 3.5rem;
+    width: clamp(10rem, 15vw, 15rem);
+    border: none;
+    border-top-left-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
+}
+
+.footer-subscribe-formsubmit {
+    --border-radius: 2rem;
+    height: 3.5rem;
+    border: none;
+    border-top-right-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+    transform: translate(-10px, -1px);
+}
