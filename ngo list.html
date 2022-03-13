@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                font-family: Verdana, sans-serif;
+                margin: 0;
+            }
+            .mySlides {
+                display: none;
+            }
+            img {
+                vertical-align: middle;
+            }
+
+            /* Slideshow container */
+            .slideshow-container {
+                max-width: 700px;
+                position: relative;
+                margin: auto;
+            }
+
+            /* Next & previous buttons */
+            .prev,
+            .next {
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                width: auto;
+                padding: 16px;
+                margin-top: -22px;
+                color: white;
+                font-weight: bold;
+                font-size: 18px;
+                transition: 0.6s ease;
+                border-radius: 0 3px 3px 0;
+                user-select: none;
+            }
+
+            /* Position the "next button" to the right */
+            .next {
+                right: 0;
+                border-radius: 3px 0 0 3px;
+            }
+
+            /* On hover, add a black background color with a little bit see-through */
+            .prev:hover,
+            .next:hover {
+                background-color: rgba(0, 0, 0, 0.8);
+            }
+
+            /* Caption text */
+            .text {
+                color: #f2f2f2;
+                font-size: 15px;
+                padding: 8px 12px;
+                position: absolute;
+                bottom: 8px;
+                width: 100%;
+                text-align: center;
+            }
+
+            /* Number text (1/3 etc) */
+            .numbertext {
+                color: #f2f2f2;
+                font-size: 12px;
+                padding: 8px 12px;
+                position: absolute;
+                top: 0;
+            }
+
+            /* The dots/bullets/indicators */
+            .dot {
+                cursor: pointer;
+                height: 15px;
+                width: 15px;
+                margin: 0 2px;
+                background-color: #bbb;
+                border-radius: 50%;
+                display: inline-block;
+                transition: background-color 0.6s ease;
+            }
+
+            .active-dot,
+            .dot:hover {
+                background-color: #717171;
+            }
+
+            /* Fading animation */
+            .fades {
+                -webkit-animation-name: fade;
+                -webkit-animation-duration: 1.5s;
+                animation-name: fade;
+                animation-duration: 1.5s;
+            }
+
+            @-webkit-keyframes fade {
+                from {
+                    opacity: 0.4;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+
+            @keyframes fade {
+                from {
+                    opacity: 0.4;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+
+            /* On smaller screens, decrease text size */
+            @media only screen and (max-width: 300px) {
+                .prev,
+                .next,
+                .text {
+                    font-size: 11px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light top-navbar">
+            <div class="container">
+                <a class="navbar-brand" href="#">NGOsathi</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                    class="collapse navbar-collapse justify-content-end"
+                    id="navbarNav"
+                >
+                    <ul class="navbar-nav gap-3">
+                        <li class="nav-item">
+                            <a
+                                class="nav-link active text-black"
+                                aria-current="page"
+                                href="#"
+                                >Home</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black" href="#">NGOs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black" href="EVENTS.html"
+                                >Events</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link text-white btn btn-primary rounded-pill"
+                                href="issuealert.html"
+                                >Register an issue</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="slideshow-container mt-5">
+            <div class="mySlides fades">
+                <div class="numbertext">1 / 14</div>
+                <img src="images/download.png" style="width: 100%" />
+                <div class="text">Caption Text</div>
+            </div>
+
+            <div class="mySlides fades">
+                <div class="numbertext">2 / 14</div>
+                <img src="images/energy.jpg" style="width: 100%" />
+                <div class="text">Caption Two</div>
+            </div>
+
+            <div class="mySlides fades">
+                <div class="numbertext">3 / 14</div>
+                <img src="images/genderequality.png" style="width: 100%" />
+                <div class="text">Caption Three</div>
+            </div>
+            <div class="mySlides fades">
+                <div class="numbertext">4 / 14</div>
+                <img src="images/goodhealth.png" style="width: 100%" />
+                <div class="text">Caption Three</div>
+            </div>
+            <div class="mySlides fades">
+                <div class="numbertext">5 / 14</div>
+                <img src="images/growth.jpg" style="width: 100%" />
+                <div class="text">Caption Three</div>
+            </div>
+            <div class="mySlides fades">
+                <div class="numbertext">6 / 14</div>
+                <img src="images/industry.jpg" style="width: 100%" />
+                <div class="text">Caption Three</div>
+            </div>
+            <div class="mySlides fades">
+                <div class="numbertext">7/ 14</div>
+                <img src="images/peace.jpg" style="width: 100%" />
+                <div class="text">Caption Three</div>
+            </div>
+            <div class="mySlides fades">
+                <div class="numbertext">8 / 14</div>
+                <img src="images/partnership.jpg" style="width: 100%" />
+                <div class="text">Caption Three</div>
+            </div>
+            <div class="mySlides fades">
+                <div class="numbertext">9 / 14</div>
+                <img src="images/sustainablecities.jpg" style="width: 100%" />
+                <div class="text">Caption Three</div>
+            </div>
+            <div class="mySlides fades">
+                <div class="numbertext">10 / 14</div>
+                <img src="images/reduceinequality.jpg" style="width: 100%" />
+                <div class="text">Caption Three</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br />
+
+        <div style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span>
+            <span class="dot" onclick="currentSlide(9)"></span>
+            <span class="dot" onclick="currentSlide(10)"></span>
+        </div>
+
+        <div class="container my-5">
+            <h1 class="text-center mb-3 fw-bold">NGOs List</h1>
+            <div class="row gap-4 justify-content-center mb-5">
+                <div class="col-3">
+                    <a href="c/NGO.html" class="text-decoration-none text-black">
+                        <div class="card" style="width: 18rem">
+                            <img
+                            class="card-img-top"
+                            src="images/animals.png"
+                            alt="Card image cap"
+                            />
+                            <div class="card-body">
+                             <p class="card-text ">
+                                   <h2>Save Animals</h2>
+                                   <p>Put shackels on 
+                                    your greed, killing animals 
+                                        is not the need.</p>
+                             </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-3">
+                    <a href="c/NGO.html" class="text-decoration-none text-black">
+                        <div class="card" style="width: 18rem">
+                            <img
+                            class="card-img-top"
+                            src="images/animals.png"
+                            alt="Card image cap"
+                            />
+                            <div class="card-body">
+                             <p class="card-text ">
+                                   <h2>Save Animals</h2>
+                                   <p>Put shackels on 
+                                    your greed, killing animals 
+                                        is not the need.</p>
+                             </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-3">
+                    <a href="c/NGO.html" class="text-decoration-none text-black">
+                        <div class="card" style="width: 18rem">
+                            <img
+                            class="card-img-top"
+                            src="images/animals.png"
+                            alt="Card image cap"
+                            />
+                            <div class="card-body">
+                             <p class="card-text ">
+                                   <h2>Save Animals</h2>
+                                   <p>Put shackels on 
+                                    your greed, killing animals 
+                                        is not the need.</p>
+                             </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+            
+                
+            </div>
+            <div class="row gap-4 justify-content-center mb-5">
+                <div class="col-3">
+                    <a href="c/NGO.html" class="text-decoration-none text-black">
+                        <div class="card" style="width: 18rem">
+                            <img
+                            class="card-img-top"
+                            src="images/animals.png"
+                            alt="Card image cap"
+                            />
+                            <div class="card-body">
+                             <p class="card-text ">
+                                   <h2>Save Animals</h2>
+                                   <p>Put shackels on 
+                                    your greed, killing animals 
+                                        is not the need.</p>
+                             </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-3">
+                    <a href="c/NGO.html" class="text-decoration-none text-black">
+                        <div class="card" style="width: 18rem">
+                            <img
+                            class="card-img-top"
+                            src="images/animals.png"
+                            alt="Card image cap"
+                            />
+                            <div class="card-body">
+                             <p class="card-text ">
+                                   <h2>Save Animals</h2>
+                                   <p>Put shackels on 
+                                    your greed, killing animals 
+                                        is not the need.</p>
+                             </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-3">
+                    <a href="c/NGO.html" class="text-decoration-none text-black">
+                        <div class="card" style="width: 18rem">
+                            <img
+                            class="card-img-top"
+                            src="images/animals.png"
+                            alt="Card image cap"
+                            />
+                            <div class="card-body">
+                             <p class="card-text ">
+                                   <h2>Save Animals</h2>
+                                   <p>Put shackels on 
+                                    your greed, killing animals 
+                                        is not the need.</p>
+                             </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+            
+                
+            </div>
+        </div>
+        <footer class="u-width-100per u-mt-large">
+            <div class="u-width-100per">
+                <img
+                    src="images/wavesOpacity.svg"
+                    alt="waves divider"
+                    class="rotate-180"
+                />
+            </div>
+            <div class="u-width-100per footer-box pt-5">
+                <div class="container">
+                    <div class="row gap-sm-3 gap-lg-0">
+                        <div
+                            class="col-lg-3 col-md-12 u-center-on-small-screen"
+                        >
+                            <h3 class="fs-1 fw-bold text-black">NGOsathi</h3>
+                            <p>Serve the society with glory</p>
+                        </div>
+                        <div
+                            class="col-md-2 col-sm-12 offset-lg-2 u-center-on-small-screen"
+                        >
+                            <h4 class="fs-4 text-black mt-4 u-fw-medium">
+                                Connect with Us:
+                            </h4>
+                            <div
+                                class="d-flex gap-3 mt-3 u-center-on-small-screen"
+                            >
+                                <a href="#">
+                                    <img
+                                        src="images/fb.png"
+                                        alt="facebook icon"
+                                        class="footer-social-media-icons"
+                                    />
+                                </a>
+                                <a href="#">
+                                    <img
+                                        src="images/insta.png"
+                                        alt="instagram icon"
+                                        class="footer-social-media-icons"
+                                    />
+                                </a>
+                                <a href="#">
+                                    <img
+                                        src="images/twitter.png"
+                                        alt="twitter icon"
+                                        class="footer-social-media-icons"
+                                    />
+                                </a>
+                            </div>
+                        </div>
+                        <div
+                            class="col-lg-4 col-md-12 offset-lg-1 u-center-on-small-screen"
+                        >
+                            <h4 class="fs-4 text-black mt-4 u-fw-medium">
+                                Subscribe to the Newsletter:
+                            </h4>
+                            <p>Connect with our community of volunteers</p>
+                            <form class="footer-subscribe-form mt-4">
+                                <input
+                                    type="email"
+                                    class="footer-subscribe-form__input"
+                                />
+                                <button
+                                    class="footer-subscribe-form__submit ps-3 pe-3 ms-0 btn btn-primary"
+                                >
+                                    Subscribe
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides((slideIndex += n));
+            }
+
+            function currentSlide(n) {
+                showSlides((slideIndex = n));
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {
+                    slideIndex = 1;
+                }
+                if (n < 1) {
+                    slideIndex = slides.length;
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(
+                        " active-dot",
+                        ""
+                    );
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active-dot";
+            }
+        </script>
+    </body>
+</html>
