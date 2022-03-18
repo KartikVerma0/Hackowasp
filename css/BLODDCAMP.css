@@ -1,0 +1,70 @@
+body {
+    background-image: url(../images/db3.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.text {
+    display: block;
+    width: auto;
+    margin-left: 50rem;
+    margin-right: 2rem;
+    margin-top: 10rem;
+    height: 100vh;
+}
+
+.text h1 {
+    text-align: right;
+    color: crimson;
+    font-size: 50px;
+    font-family: "playfair display", serif;
+}
+
+.text h3 {
+    text-align: right;
+    font-size: 28px;
+    font-family: "playfair display", serif;
+}
+
+.eventsl {
+    margin-top: 20rem;
+    display: flex;
+}
+
+.eventsr {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.img1 {
+    margin-left: 15rem;
+    margin-right: 15rem;
+}
+
+.img2 {
+    margin-right: 15rem;
+    margin-left: 15rem;
+}
+
+.evtextl {
+    text-align: justify;
+    margin-right: 5rem;
+    margin-left: 10rem;
+    padding-left: 2rem;
+    font-family: "poppins", serif;
+}
+
+.eventsr h2 {
+    text-align: left;
+    font-family: "playfair display", serif;
+}
+
+.eventsl h2 {
+    font-family: "playfair display", serif;
+}
+
+.evtextr {
+    text-align: justify;
+    margin-left: 15rem;
+    font-family: "poppins", serif;
+}
