@@ -1,0 +1,27 @@
+.footer-box {
+    background-color: $clr-primary-200;
+    transform: translateY(-1px);
+    padding-bottom: 5rem;
+}
+
+.footer-social-media-icons {
+    width: 40px;
+}
+
+.footer-subscribe-form {
+    &__input {
+        height: 3.5rem;
+        width: clamp(10rem, 15vw, 15rem);
+        border: none;
+        border-top-left-radius: $footer-form-border-radius;
+        border-bottom-left-radius: $footer-form-border-radius;
+    }
+
+    &__submit {
+        height: 3.5rem;
+        border: none;
+        border-top-right-radius: $footer-form-border-radius;
+        border-bottom-right-radius: $footer-form-border-radius;
+        transform: translate(-10px, -1px);
+    }
+}

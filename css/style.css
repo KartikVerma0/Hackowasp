@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "poppins", sans-serif;
+}
+
+.u-mt-large {
+    margin-top: 8rem;
+}
+
+@media screen and (max-width: 576px) {
+    .u-mt-xs-5 {
+        margin-top: 2rem;
+    }
+}
+
+.u-fs-large {
+    font-size: clamp(1.5rem, 14vw, 4.5rem);
+}
+
+.u-fs-medium {
+    font-size: clamp(1rem, 9vw, 3.5rem);
+}
+
+.u-width-100per {
+    width: 100%;
+}
+
+@media screen and (max-width: 576px) {
+    .u-width-small-100per {
+        width: 100%;
+    }
+}
+
+.u-width-10per {
+    width: 10%;
+}
+
+@media screen and (max-width: 576px) {
+    .u-width-xs-30per {
+        width: 30%;
+    }
+}
+
+.u-width-80per {
+    width: 80%;
+}
+
+.u-width-90per {
+    width: 90%;
+}
+
+.u-height-regular {
+    height: 2rem;
+}
+
+.u-height-big {
+    height: 4rem;
+}
+
+.u-height-large {
+    height: 6rem;
+}
+
+.u-fw-medium {
+    font-weight: 500;
+}
+
+@media screen and (max-width: 576px) {
+    .u-center-on-small-screen {
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+.u-rounded-4 {
+    border-radius: 0.5rem;
+}
+
+@media screen and (max-width: 576px) {
+    .u-flex-xs-column-reverse {
+        flex-direction: column-reverse;
+    }
+}
+
+.rotate-180 {
+    transform: rotateX(180deg);
+}
+
+.footer-box {
+    background-color: #e3a700;
+    transform: translateY(-1px);
+    padding-bottom: 5rem;
+}
+
+.footer-social-media-icons {
+    width: 40px;
+}
+
+.footer-subscribe-form__input {
+    height: 3.5rem;
+    width: clamp(10rem, 15vw, 15rem);
+    border: none;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+
+.footer-subscribe-form__submit {
+    height: 3.5rem;
+    border: none;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    transform: translate(-10px, -1px);
+}
+
+.top-navbar {
+    background-color: #ffbf00;
+}
+.top-navbar .container {
+    justify-content: space-around;
+}
+
+.navbar-brand {
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+.nav-link {
+    font-size: 1.25rem;
+}
+
+.making-difference-image {
+    background-image: linear-gradient(
+            to left,
+            white 10%,
+            rgba(255, 255, 255, 0.1) 50%
+        ),
+        url("../images/boy helping old woman.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.making-difference-heading {
+    font-family: "playfair display", serif;
+}
+
+.aim-heading {
+    font-family: "playfair display", serif;
+}
+
+.issue-heading {
+    color: #0085cb;
+    font-weight: 600;
+}
+
+.issue-form {
+    background-image: linear-gradient(to top, #0085cb, #00d8ff);
+    border-radius: 1.5rem;
+}
+
+#locationTrackingLink {
+    cursor: pointer;
+}
