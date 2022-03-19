@@ -132,10 +132,31 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   --clr-opacity: 0.8;
-  background-image: linear-gradient(to bottom right, rgba(171, 120, 0, var(--clr-opacity)), rgba(0, 133, 203, var(--clr-opacity))), url(../images/ngo-list-carousel-1.jpg); }
+  background-image: linear-gradient(to bottom right, rgba(171, 120, 0, var(--clr-opacity)), rgba(0, 133, 203, var(--clr-opacity))), url("../images/ngo-list-header-img.jpg"); }
   .ngo-list-header__heading {
     background-image: linear-gradient(60deg, #0085cb 0%, #ffbf00 50%, #00bfff 100%);
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
     font-size: clamp(5rem, 20vw, 15rem); }
+
+.ngo-list__card {
+  height: 22rem;
+  position: relative;
+  overflow-y: hidden; }
+  .ngo-list__card::after {
+    content: "";
+    width: 100%;
+    height: 5rem;
+    position: absolute;
+    bottom: 0;
+    background-image: linear-gradient(to top, white, transparent); }
+  .ngo-list__card__img {
+    height: 12rem;
+    width: 100%;
+    object-fit: contain; }
+  .ngo-list__card__heading {
+    font-size: 2rem;
+    font-weight: bold; }
+  .ngo-list__card__desc {
+    font-size: 0.9rem; }
