@@ -67,7 +67,7 @@ body {
   transform: rotateX(180deg); }
 
 .footer-box {
-  background-color: var(--clr-primary-200);
+  background-color: #e3a700;
   transform: translateY(-1px);
   padding-bottom: 5rem; }
 
@@ -75,30 +75,27 @@ body {
   width: 40px; }
 
 .footer-subscribe-form__input {
-  --border-radius: 2rem;
   height: 3.5rem;
   width: clamp(10rem, 15vw, 15rem);
   border: none;
-  border-top-left-radius: var(--border-radius);
-  border-bottom-left-radius: var(--border-radius); }
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem; }
 
 .footer-subscribe-form__submit {
-  --border-radius: 2rem;
   height: 3.5rem;
   border: none;
-  border-top-right-radius: var(--border-radius);
-  border-bottom-right-radius: var(--border-radius);
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
   transform: translate(-10px, -1px); }
 
 .top-navbar {
-  background-color: var(--clr-primary-100); }
+  background-color: #ffbf00; }
+  .top-navbar .container {
+    justify-content: space-around; }
 
 .navbar-brand {
   font-weight: 600;
   font-size: 2.5rem; }
-
-.top-navbar .container {
-  justify-content: space-around; }
 
 .nav-link {
   font-size: 1.25rem; }
@@ -115,12 +112,11 @@ body {
   font-family: "playfair display", serif; }
 
 .issue-heading {
-  color: var(--clr-complementary-400);
-  font-weight: 600;
-  /* font-size: 3.5rem; */ }
+  color: #0085cb;
+  font-weight: 600; }
 
 .issue-form {
-  background-image: linear-gradient(to top, var(--clr-complementary-400), var(--clr-complementary-100));
+  background-image: linear-gradient(to top, #0085cb, #00d8ff);
   border-radius: 1.5rem; }
 
 #locationTrackingLink {
