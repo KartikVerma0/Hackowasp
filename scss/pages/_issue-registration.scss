@@ -1,0 +1,18 @@
+.issue-heading {
+    color: var(--clr-complementary-400);
+    font-weight: 600;
+    /* font-size: 3.5rem; */
+}
+
+.issue-form {
+    background-image: linear-gradient(
+        to top,
+        var(--clr-complementary-400),
+        var(--clr-complementary-100)
+    );
+    border-radius: 1.5rem;
+}
+
+#locationTrackingLink {
+    cursor: pointer;
+}

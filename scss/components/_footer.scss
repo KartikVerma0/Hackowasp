@@ -1,0 +1,27 @@
+.footer-box {
+    background-color: var(--clr-primary-200);
+    transform: translateY(-1px);
+    padding-bottom: 5rem;
+}
+
+.footer-social-media-icons {
+    width: 40px;
+}
+
+.footer-subscribe-form__input {
+    --border-radius: 2rem;
+    height: 3.5rem;
+    width: clamp(10rem, 15vw, 15rem);
+    border: none;
+    border-top-left-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
+}
+
+.footer-subscribe-form__submit {
+    --border-radius: 2rem;
+    height: 3.5rem;
+    border: none;
+    border-top-right-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+    transform: translate(-10px, -1px);
+}
