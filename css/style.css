@@ -164,7 +164,8 @@ body {
   .ngo-list__card__img {
     height: 12rem;
     width: 100%;
-    object-fit: contain; }
+    object-fit: contain;
+    background-color: white; }
   .ngo-list__card__heading {
     font-size: 2rem;
     font-weight: bold;
