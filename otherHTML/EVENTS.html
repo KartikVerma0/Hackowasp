@@ -4,21 +4,31 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>List of Events</title>
-        <link rel="stylesheet" href="EVENTS.css" />
+        <title>Events List -NGOsathi</title>
+        <link
+            rel="shortcut icon"
+            href="../images/united.png"
+            type="image/x-icon"
+        />
+        <!-- Font Family -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+            rel="stylesheet"
+        />
         <link
             href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap"
             rel="stylesheet"
         />
+
         <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
             rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
-            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
             crossorigin="anonymous"
         />
-        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="../css/style.css" />
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light top-navbar">
@@ -44,7 +54,7 @@
                             <a
                                 class="nav-link active text-black"
                                 aria-current="page"
-                                href="index.html"
+                                href="../index.html"
                                 >Home</a
                             >
                         </li>
@@ -62,206 +72,162 @@
                         <li class="nav-item">
                             <a class="nav-link text-black" href="#">Contact</a>
                         </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link text-white btn btn-primary rounded-pill"
+                                href="issuealert.html"
+                                >Register an issue</a
+                            >
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <div>
-            <div>
-                <h1 class="mainhead">Interested in a event?</h1>
-                <h3 class="sechead">See the events happening soon!</h3>
-            </div>
 
-            <div class="btno">
-                <a href="#ev"> Know More! </a>
-            </div>
-        </div>
-
-        <br />
-
-        <div class="event_header" id="ev">
-            <h1>EVENTS</h1>
-        </div>
-
-        <div class="events">
-            <div class="card">
-                <a href="/BLOOD CAMP.html">
-                    <img class="event_img" src="images/bdthumbnail.jpg" />
-                </a>
-                <div class="eventheading">
-                    <p>
-                        <b>BLOOD CAMP</b>
+        <header class="events-list-header">
+            <div class="container">
+                <div>
+                    <h1 class="events-list-header__title">
+                        Interested in a event?
+                    </h1>
+                    <p class="events-list-header__subtitle">
+                        See the events happening soon!
                     </p>
                 </div>
-                <p class="event_desc">
-                    Organiser name:
-                    <br />
-                    ROTARY BLOOD BANK
-                    <br />
-                    <br />
-                    Location:
-                    <br />
-                    GMCH-32, CHANDIGARH
-                    <br />
-                    <br />
-                    Contact Info:
-                    <br />
-                    gmch@gmch.gov.in
-                    <br />
-                </p>
-            </div>
 
-            <div class="card">
-                <a href="BLOOD CAMP.html">
-                    <img class="event_img" src="images/donate cloth1.jpg" />
+                <a
+                    href="#events"
+                    class="mt-5 btn btn-warning rounded-pill u-btn-xlg"
+                >
+                    See Events
                 </a>
-                <div class="eventheading">
-                    <p>
-                        <b>CLOTH CAMP</b>
-                    </p>
-                </div>
-                <p class="event_desc">
-                    Organiser name:
-                    <br />
-                    Open Project
-                    <br />
-                    <br />
-                    Location:
-                    <br />
-                    Sector-11, Chandigarh
-                    <br />
-                    <br />
-                    Contact Info:
-                    <br />
-                    Sarathi@ngo.in
-                </p>
             </div>
+        </header>
 
-            <div class="card">
-                <a href="">
-                    <img class="event_img" src="images/placeholder_ngo.jpg" />
-                </a>
-                <div class="eventheading">
-                    <p>
-                        <b>EVENT NAME</b>
-                    </p>
+        <main class="events-list-main">
+            <h2 class="events-list-main__header" id="events">EVENTS</h2>
+            <div
+                class="container-fluid d-flex gap-4 justify-content-center mb-5 flex-wrap"
+            >
+                <div class="col-sm-12 col-md-3">
+                    <a
+                        href="./BLOOD CAMP.html"
+                        class="text-decoration-none text-black"
+                        target="blank"
+                    >
+                        <div class="card events-list-main__card">
+                            <img
+                                class="card-img-top events-list-main__card__img"
+                                src="../images/bdthumbnail.jpg"
+                                alt="Card image cap"
+                            />
+                            <div class="card-body">
+                                <h2 class="events-list-main__card__heading">
+                                    BLOOD CAMP
+                                </h2>
+                                <div class="events-list-main__card__desc">
+                                    <p>
+                                        <span class="fw-bold"
+                                            >Organiser name: </span
+                                        >ROTARY BLOOD BANK
+                                    </p>
+                                    <p>
+                                        <span class="fw-bold">Location: </span
+                                        >GMCH-32, CHANDIGARH
+                                    </p>
+                                    <p>
+                                        <span class="fw-bold"
+                                            >Contact Info: </span
+                                        >gmch@gmch.gov.in
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <p class="event_desc">
-                    Organiser name:<br />
-                    Collaborative work <br />
-                    <br />
-                    Location:<br />
-                    Zirakpur, Punjab <br /><br />
-                    Contact Info:<br />
-                    Oldy@ngo.in
-                </p>
-            </div>
-        </div>
-
-        <div class="events">
-            <div class="card">
-                <a href="">
-                    <img class="event_img" src="images/placeholder_ngo.jpg" />
-                </a>
-                <div class="eventheading">
-                    <p>
-                        <b>EVENT NAME</b>
-                    </p>
+                <div class="col-sm-12 col-md-3">
+                    <a
+                        href="./hand me downs.html"
+                        class="text-decoration-none text-black"
+                        target="blank"
+                    >
+                        <div class="card events-list-main__card">
+                            <img
+                                class="card-img-top events-list-main__card__img"
+                                src="../images/donate cloth1.jpg"
+                                alt="Card image cap"
+                            />
+                            <div class="card-body">
+                                <h2 class="events-list-main__card__heading">
+                                    CLOTH CAMP
+                                </h2>
+                                <div class="events-list-main__card__desc">
+                                    <p>
+                                        <span class="fw-bold">
+                                            Organiser name:
+                                        </span>
+                                        Open Project
+                                    </p>
+                                    <p>
+                                        <span class="fw-bold">Location: </span>
+                                        Sector-11, Chandigarh
+                                    </p>
+                                    <p>
+                                        <span class="fw-bold"
+                                            >Contact Info:
+                                        </span>
+                                        Sarathi@ngo.in
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <p class="event_desc">
-                    Organiser name:<br />
-                    Location:<br />
-                    Contact Info:<br />
-                </p>
-            </div>
-
-            <div class="card">
-                <a href="">
-                    <img class="event_img" src="images/placeholder_ngo.jpg" />
-                </a>
-                <div class="eventheading">
-                    <p>
-                        <b>EVENT NAME</b>
-                    </p>
+                <div class="col-sm-12 col-md-3">
+                    <a
+                        href="#"
+                        class="text-decoration-none text-black"
+                        target="blank"
+                    >
+                        <div class="card events-list-main__card">
+                            <img
+                                class="card-img-top events-list-main__card__img"
+                                src="../images/placeholder_ngo.jpg"
+                                alt="Card image cap"
+                            />
+                            <div class="card-body">
+                                <h2 class="events-list-main__card__heading">
+                                    HELPING HAND
+                                </h2>
+                                <div class="events-list-main__card__desc">
+                                    <p>
+                                        <span class="fw-bold">
+                                            Organiser name:
+                                        </span>
+                                        Collaborative work
+                                    </p>
+                                    <p>
+                                        <span class="fw-bold"> Location: </span>
+                                        Zirakpur, Punjab
+                                    </p>
+                                    <p>
+                                        <span class="fw-bold"
+                                            >Contact Info:</span
+                                        >
+                                        Oldy@ngo.in
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <p class="event_desc">
-                    Organiser name:<br />
-                    Location:<br />
-                    Contact Info:<br />
-                </p>
             </div>
-
-            <div class="card">
-                <a href="">
-                    <img class="event_img" src="images/placeholder_ngo.jpg" />
-                </a>
-                <div class="eventheading">
-                    <p>
-                        <b>EVENT NAME</b>
-                    </p>
-                </div>
-                <p class="event_desc">
-                    Organiser name:<br />
-                    Location:<br />
-                    Contact Info:<br />
-                </p>
-            </div>
-        </div>
-
-        <div class="events">
-            <div class="card">
-                <a href="">
-                    <img class="event_img" src="images/placeholder_ngo.jpg" />
-                </a>
-                <div class="eventheading">
-                    <p>
-                        <b>EVENT NAME</b>
-                    </p>
-                </div>
-                <p class="event_desc">
-                    Organiser name:<br />
-                    Location:<br />
-                    Contact Info:<br />
-                </p>
-            </div>
-
-            <div class="card">
-                <a href="">
-                    <img class="event_img" src="images/placeholder_ngo.jpg" />
-                </a>
-                <div class="eventheading">
-                    <p>
-                        <b>EVENT NAME</b>
-                    </p>
-                </div>
-                <p class="event_desc">
-                    Organiser name:<br />
-                    Location:<br />
-                    Contact Info:<br />
-                </p>
-            </div>
-
-            <div class="card">
-                <a href="">
-                    <img class="event_img" src="images/placeholder_ngo.jpg" />
-                </a>
-                <div class="eventheading">
-                    <p>
-                        <b>EVENT NAME</b>
-                    </p>
-                </div>
-                <p class="event_desc">
-                    Organiser name:<br />
-                    Location:<br />
-                    Contact Info:<br />
-                </p>
-            </div>
-        </div>
+        </main>
         <!--footer start-->
         <footer class="u-width-100per u-mt-large">
             <div class="u-width-100per">
                 <img
-                    src="images/wavesOpacity.svg"
+                    src="../images/wavesOpacity.svg"
                     alt="waves divider"
                     class="rotate-180"
                 />
@@ -286,21 +252,21 @@
                             >
                                 <a href="#">
                                     <img
-                                        src="images/fb.png"
+                                        src="../images/fb.png"
                                         alt="facebook icon"
                                         class="footer-social-media-icons"
                                     />
                                 </a>
                                 <a href="#">
                                     <img
-                                        src="images/insta.png"
+                                        src="../images/insta.png"
                                         alt="instagram icon"
                                         class="footer-social-media-icons"
                                     />
                                 </a>
                                 <a href="#">
                                     <img
-                                        src="images/twitter.png"
+                                        src="../images/twitter.png"
                                         alt="twitter icon"
                                         class="footer-social-media-icons"
                                     />
@@ -331,6 +297,6 @@
             </div>
         </footer>
         <!--footer end-->
-        <script src="js/indexapp.js"></script>
+        <script src="../js/indexapp.js"></script>
     </body>
 </html>
