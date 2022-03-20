@@ -131,19 +131,29 @@ body {
   background-position: 50% 0%;
   background-size: cover;
   background-repeat: no-repeat;
-  --clr-opacity: 0.8;
+  --clr-opacity: 0.9;
   background-image: linear-gradient(to bottom right, rgba(171, 120, 0, var(--clr-opacity)), rgba(0, 133, 203, var(--clr-opacity))), url("../images/ngo-list-header-img.jpg"); }
   .ngo-list-header__heading {
     background-image: linear-gradient(60deg, #0085cb 0%, #ffbf00 50%, #00bfff 100%);
     color: transparent;
+    -webkit-text-stroke: 5px white;
     -webkit-background-clip: text;
     background-clip: text;
-    font-size: clamp(5rem, 20vw, 15rem); }
+    font-size: clamp(8rem, 20vw, 15rem); }
 
 .ngo-list__card {
   height: 22rem;
   position: relative;
-  overflow-y: hidden; }
+  overflow-y: hidden;
+  box-shadow: 0px 10px 15px -10px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+  border: none; }
+  .ngo-list__card:hover {
+    box-shadow: 0px 10px 15px -10px #ffbf00;
+    background-color: #ffbf00;
+    color: white; }
+  .ngo-list__card:hover .ngo-list__card__heading {
+    color: white; }
   .ngo-list__card::after {
     content: "";
     width: 100%;
@@ -157,6 +167,7 @@ body {
     object-fit: contain; }
   .ngo-list__card__heading {
     font-size: 2rem;
-    font-weight: bold; }
+    font-weight: bold;
+    color: #ffbf00; }
   .ngo-list__card__desc {
     font-size: 0.9rem; }
